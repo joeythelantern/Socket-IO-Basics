@@ -70,7 +70,7 @@ export class ServerSocket {
 
                 const users = Object.values(this.users);
 
-                this.SendMessage('user_disconnected', users, uid);
+                this.SendMessage('user_disconnected', users, socket.id);
             }
         });
     };
